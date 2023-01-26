@@ -53,7 +53,7 @@ export default function Home() {
             <label className="inputLabel">Message</label>
             <input />
           </div>
-          <div className="flex flex-col w-[50%]">
+          <div className="flex flex-col sm:w-[50%]">
             <button className="bg-sky-800 text-white py-2 ">Submit</button>
           </div>
         </form>
