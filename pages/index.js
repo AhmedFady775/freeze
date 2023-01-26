@@ -9,7 +9,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen">
-      <section>
+      <section className="flex flex-col sm:flex-row">
         <div className="relative text-center text-white">
           <Image src={FFRT} />
           <div className="center space-y-4 whitespace-nowrap">
@@ -26,13 +26,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="color text-lg px-8 py-16 text-white text-center">
-        <p className="text-4xl mb-10">THE GIFT OF NATURE</p>
-        <p className="leading-8">Freeze is a manufacturer and exporter of frozen fruits and vegetables with an annual  production capacity of 20,000 tons, as well as a storage capacity which stores the frozen products at optimal temperatures until it is time to deliver to our customers.</p>
+      <section className="color flex flex-col text-lg px-8 py-16 text-white text-center sm:items-center ">
+        <p className="text-4xl mb-10 sm:text-7xl">THE GIFT OF NATURE</p>
+        <p className="leading-8 sm:w-[50%]">Freeze is a manufacturer and exporter of frozen fruits and vegetables with an annual  production capacity of 20,000 tons, as well as a storage capacity which stores the frozen products at optimal temperatures until it is time to deliver to our customers.</p>
       </section>
-      <section className="bg-slate-100 text-lg px-4 py-10 text-sky-800 text-center">
+      <section className="bg-slate-100 text-lg px-4 py-10 text-sky-800 text-center ">
         <p className="text-3xl mb-6">GET IN TOUCH</p>
-        <form className="text-left">
+        <form className="text-left sm:flex flex-col items-center">
           <div className="inputCont">
             <label className="inputLabel">Name</label>
             <input />
@@ -53,10 +53,9 @@ export default function Home() {
             <label className="inputLabel">Message</label>
             <input />
           </div>
-          <div className="flex flex-col ">
-            <button className="bg-sky-800 text-white py-2">Submit</button>
+          <div className="flex flex-col w-[50%]">
+            <button className="bg-sky-800 text-white py-2 ">Submit</button>
           </div>
-
         </form>
       </section>
     </main>

@@ -29,6 +29,7 @@ body {
 .inputCont {
   display: flex;
   flex-direction: column;
+  @apply sm:w-[50%];
 }
 
 .inputLabel {
